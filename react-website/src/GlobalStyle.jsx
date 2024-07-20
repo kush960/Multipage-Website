@@ -25,19 +25,19 @@ font-weight: 300;
 white-space: normal;
 text-align: center;
 }
+
 h3{
-color:${({ theme }) => theme.colors.heading };  
-font-size: 3.2rem;
-font-weight: 100;
-white-space: normal;
-text-align: center;
+font-size: 1.8rem;
+font-weight: 400;
 }
-h4{
+
+p{
 color:${({ theme }) => theme.colors.heading };  
-font-size: 2.1rem;
-font-weight: 50;
-white-space: normal;
-text-align: center;
+opacity: .7;
+font-size: 1.66rem;
+Line-height: 1.5;
+margin-top: 1rem;
+font-weight: 400;
 }
 
 `;
