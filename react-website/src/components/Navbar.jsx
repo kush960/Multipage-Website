@@ -15,6 +15,7 @@ const Navbar = () => {
          .navbar-link{
           &:link,
           &:visited{
+            padding-left: 15px;
             display: inline-block;
             text-decoration: none;
             font-size: 1.8rem; 
