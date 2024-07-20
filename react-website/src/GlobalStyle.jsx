@@ -39,5 +39,12 @@ Line-height: 1.5;
 margin-top: 1rem;
 font-weight: 400;
 }
+a{
+text-decoration: none;
+}
+
+li{
+list-style: none;
+}
 
 `;
