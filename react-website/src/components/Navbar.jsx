@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Navbar = () => {
-  return <nav>
+  return <Nav>
     <div className="menuIcons">
         <ul className="navbar-list">
             <li>
@@ -18,7 +19,9 @@ const Navbar = () => {
             </li>
         </ul>
     </div>
-  </nav>
-}
+  </Nav>
+};
+
+const Nav = styled.nav
 
 export default Navbar;
