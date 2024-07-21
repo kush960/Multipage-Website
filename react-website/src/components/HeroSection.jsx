@@ -13,14 +13,15 @@ import { Button } from "../styles/button";
                    Nostrum numquam blanditiis sit a, doloremque ipsum velit quo consequatur fugit vero in error. 
                    Labore earum, id atque ipsa ducimus cum distinctio.
                 </p>
+                <Button className="btn hireme-btn">
+                    <NavLink to="/contact"> GO </NavLink>
+                </Button>
             </div>
-        <Button className="btn hireme-btn">
-            <NavLink to="/contact"> GO </NavLink>
-        </Button>
+       
         {/* Below div is for image */}
         <div className="section-hero-image">
             <picture>
-                <img src="./images/hero.jpg" alt="" srcSet="" ></img>
+                <img src="./images/hero.jpg" alt="" className="hero-img" ></img>
             </picture>
         </div>
     </div>
