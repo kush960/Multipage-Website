@@ -1,7 +1,10 @@
+
 import HeroSection from "./components/HeroSection";
 
 
 const Home = () => {
+ 
+  
   const data = {
     name : "Kushagra Ankit" ,
     image : "./images/hero.jpg",

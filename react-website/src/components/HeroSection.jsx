@@ -1,7 +1,11 @@
+ 
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/button"; 
+import { useGlobalContext } from "../context";
+
  const HeroSection = ({ name, image }) => {
+    const {fname , age } = useGlobalContext();
    return  (
     <Wrapper>
         <div className="container grid grid-two-column">
@@ -9,7 +13,8 @@ import { Button } from "../styles/button";
             <div className="section-hero-data">
                 <p className="hero-top-data">THIS IS ME</p>
                 <h1 className="hero-heading"> {name} </h1>
-                <p className="hero-para">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p className="hero-para">  I am {fname} {age}, a full-stack developer. 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Atque deserunt eum, aperiam recusandae earum magni aspernatur, corporis quasi, vel modi ullam! 
                     Ipsa quos iure dolorum totam assumenda vitae corrupti architecto.
                 </p>
