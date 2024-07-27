@@ -1,15 +1,18 @@
 
+import { useEffect } from "react";
 import HeroSection from "./components/HeroSection";
+import { useGlobalContext } from "./context";
 
 
 const Home = () => {
  
-  
-  const data = {
-    name : "Kushagra Ankit" ,
-    image : "./images/hero.jpg",
-  }
-  return <HeroSection { ... data } />;
+ 
+
+ const { updateHomePage } = useGlobalContext();
+
+ useEffect(() =>  updateHomePage(), []);
+
+  return <HeroSection   />;
 };
 
 export default Home;
