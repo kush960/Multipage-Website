@@ -9,9 +9,9 @@ import { Button } from "../styles/button";
             <div className="section-hero-data">
                 <p className="hero-top-data">THIS IS ME</p>
                 <h1 className="hero-heading"> {name} </h1>
-                <p className="hero-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Nostrum numquam blanditiis sit a, doloremque ipsum velit quo consequatur fugit vero in error. 
-                   Labore earum, id atque ipsa ducimus cum distinctio.
+                <p className="hero-para">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Atque deserunt eum, aperiam recusandae earum magni aspernatur, corporis quasi, vel modi ullam! 
+                    Ipsa quos iure dolorum totam assumenda vitae corrupti architecto.
                 </p>
                 <Button className="btn hireme-btn">
                     <NavLink to="/contact"> GO </NavLink>
