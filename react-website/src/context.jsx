@@ -1,10 +1,13 @@
-import React, { useContext, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import reducer from "./reducer";
 const AppContext = React.createContext();
+
+const API = "https://thapareactapi.up.railway.app";
  
 const initialState = {
     name: "",
     age: "",
+    services: [],
 };
 
 
@@ -35,6 +38,30 @@ const AppProvider = ({ children }) => {
             }
         );
     };
+
+
+    //to get API data
+
+    const getServices = async(url) => {
+        try{
+            const res = await fetch( url );
+            const data = await res.json() ;
+            dispatch({type:"GET_SERVICES", payload: data });
+        } catch ( error ){
+            console.log(error);
+        }
+    };
+
+
+    // to call API
+    // Service page started
+
+    useEffect(() => {
+        getServices(API);
+    }, []);
+
+    // service page ends 
+
 
     return (
     <AppContext.Provider value={{ ...state , updateHomePage, updateAboutPage  }}>
