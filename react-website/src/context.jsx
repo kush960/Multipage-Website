@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useReducer } from 'react';
 import reducer from "./reducer";
 const AppContext = React.createContext();
 
-const API = "https://thapareactapi.up.railway.app";
+const API = "https://services-api-peho.onrender.com/services";
  
 const initialState = {
     name: "",
