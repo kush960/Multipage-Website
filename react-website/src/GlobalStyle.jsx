@@ -70,4 +70,11 @@ list-style: none;
   .grid-four-column{
      grid-template-columns: 1fr 1.2fr .5fr .8fr ;
   }
+
+  .common-heading{
+  font-size: 3.8 rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  text-teansform: uppercase;
+  }
 `;
